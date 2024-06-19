@@ -1,0 +1,1470 @@
+[
+    {
+        "id": "47d4a276af33aacb",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "01c4d46c05b6b8d3",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "9895f781.42a5e8",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "m2mqtt_srv.crt",
+        "keyname": "m2mqtt_srv.key",
+        "caname": "m2mqtt_ca.crt",
+        "servername": "",
+        "verifyservercert": false
+    },
+    {
+        "id": "ba1b1ef0.e3b2f",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Test",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "8a3e32ed32df16a8",
+        "type": "ui_group",
+        "name": "Informações Climáticas",
+        "tab": "551d1b68a5acd28a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b61dc446f9dc635a",
+        "type": "ui_group",
+        "name": "Histórico",
+        "tab": "551d1b68a5acd28a",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e64133cd1cd25b60",
+        "type": "ui_group",
+        "name": "Login",
+        "tab": "a6a1741dcb2c9f64",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "da6614083e26cb12",
+        "type": "MySQLdatabase",
+        "name": "Dados",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "dados",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "5704aeeb48fcdffe",
+        "type": "ui_group",
+        "name": "Usuários",
+        "tab": "a1e6437e85ee8787",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5ad0530768dac6d8",
+        "type": "ui_group",
+        "name": "Sensores",
+        "tab": "a1e6437e85ee8787",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "551d1b68a5acd28a",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a6a1741dcb2c9f64",
+        "type": "ui_tab",
+        "name": "Login",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a1e6437e85ee8787",
+        "type": "ui_tab",
+        "name": "Registros",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "33d10e55.f6b1de",
+        "type": "MySQLdatabase",
+        "host": "localhost",
+        "port": "3306",
+        "db": "seu_banco_de_dados",
+        "tz": ""
+    },
+    {
+        "id": "44373cf58607cd77",
+        "type": "ui_group",
+        "name": "Grupo 1",
+        "tab": "551d1b68a5acd28a",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "986cace72ea4fab3",
+        "type": "ui_group",
+        "name": "Grupo 2",
+        "tab": "551d1b68a5acd28a",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2810d95ef2593f7c",
+        "type": "ui_group",
+        "name": "Grupo 3",
+        "tab": "551d1b68a5acd28a",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e18d60dd.1fb928",
+        "type": "MySQLdatabase",
+        "name": "MySQL",
+        "host": "localhost",
+        "port": "3306",
+        "db": "seu_banco_de_dados",
+        "tz": ""
+    },
+    {
+        "id": "25c60a54ffb30605",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#cc0000",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#cc0000",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#cc0000",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ff1a1a",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#cc0000",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "33f484b24f94c94a",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "bcc9abd18d9aa717",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f51b9df2eea7b711",
+        "type": "comment",
+        "z": "47d4a276af33aacb",
+        "name": "Dashboard",
+        "info": "",
+        "x": 120,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "4bdd250d815ee834",
+        "type": "mqtt in",
+        "z": "47d4a276af33aacb",
+        "name": "Sensor 1",
+        "topic": "espdash/automacao/sensor1",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "ba1b1ef0.e3b2f",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 118,
+        "y": 568,
+        "wires": [
+            [
+                "40bc116bb2986834",
+                "cc174c86cd8df914"
+            ]
+        ]
+    },
+    {
+        "id": "40bc116bb2986834",
+        "type": "debug",
+        "z": "47d4a276af33aacb",
+        "name": "Debug Sensor 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 308,
+        "y": 568,
+        "wires": []
+    },
+    {
+        "id": "cc174c86cd8df914",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Process MQTT Data",
+        "func": "var temperature = msg.payload.temperatura;\nvar humidity = msg.payload.umidade;\n\nreturn [{payload: temperature, topic: 'Temperature'}, {payload: humidity, topic: 'Humidity'}];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 328,
+        "y": 608,
+        "wires": [
+            [
+                "3d824d2cfd42feb0",
+                "17f8dabe9465bda1",
+                "931c058c7cee656a",
+                "ae5d303a40a3d3d6",
+                "6e26d2c0dd96f999"
+            ],
+            [
+                "5ec46896d965a5f3",
+                "17f8dabe9465bda1",
+                "931c058c7cee656a",
+                "ae5d303a40a3d3d6",
+                "a5601068bd9888cd"
+            ]
+        ]
+    },
+    {
+        "id": "3d824d2cfd42feb0",
+        "type": "ui_gauge",
+        "z": "47d4a276af33aacb",
+        "name": "Gauge : Temperatura",
+        "group": "8a3e32ed32df16a8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 50,
+        "colors": [
+            "#66ccff",
+            "#ff8000",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 640,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "5ec46896d965a5f3",
+        "type": "ui_gauge",
+        "z": "47d4a276af33aacb",
+        "name": "Gauge : Umidade",
+        "group": "8a3e32ed32df16a8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Umidade",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#1a25ab",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "17f8dabe9465bda1",
+        "type": "ui_chart",
+        "z": "47d4a276af33aacb",
+        "name": "Histórico : Temperatura e Umidade",
+        "group": "b61dc446f9dc635a",
+        "order": 1,
+        "width": "6",
+        "height": "9",
+        "label": "Temperatura e Umidade",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "%H:%M",
+        "interpolate": "linear",
+        "nodata": "No Data Yet",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "80",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 680,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fbe8dea4544dca8",
+        "type": "comment",
+        "z": "47d4a276af33aacb",
+        "name": "Login",
+        "info": "",
+        "x": 80,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "4e35614ec2c9d0e8",
+        "type": "ui_form",
+        "z": "47d4a276af33aacb",
+        "name": "Login",
+        "label": "",
+        "group": "e64133cd1cd25b60",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Usuário",
+                "value": "username",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Senha",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "password": ""
+        },
+        "payload": "",
+        "submit": "Entrar",
+        "cancel": "Cancelar",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 80,
+        "y": 77,
+        "wires": [
+            [
+                "4205813e33e1d024"
+            ]
+        ]
+    },
+    {
+        "id": "4205813e33e1d024",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Montar Consulta SQL",
+        "func": "var username = msg.payload.username;\nvar password = msg.payload.password;\nmsg.topic = `SELECT * FROM USUARIOS WHERE usuario = '${username}' AND senha = '${password}'`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 77,
+        "wires": [
+            [
+                "d826efb122e46cc4"
+            ]
+        ]
+    },
+    {
+        "id": "d826efb122e46cc4",
+        "type": "mysql",
+        "z": "47d4a276af33aacb",
+        "mydb": "da6614083e26cb12",
+        "name": "",
+        "x": 443,
+        "y": 77,
+        "wires": [
+            [
+                "82231386e368957e"
+            ]
+        ]
+    },
+    {
+        "id": "82231386e368957e",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Validar Resposta",
+        "func": "if (msg.payload.length > 0) {\n    // Login bem-sucedido\n    msg.payload = 0;\n} else {\n    // Login falhou\n    msg.payload = 1;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 40,
+        "wires": [
+            [
+                "5530e39cf781c842"
+            ]
+        ]
+    },
+    {
+        "id": "5530e39cf781c842",
+        "type": "switch",
+        "z": "47d4a276af33aacb",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 630,
+        "y": 100,
+        "wires": [
+            [
+                "d1d2beef9e7bfb33"
+            ],
+            [
+                "716cecafe4391eaa"
+            ]
+        ]
+    },
+    {
+        "id": "d1d2beef9e7bfb33",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "= 0 : Sucesso",
+        "func": "/* activate session timer */\nvar sessionTimer =  flow.get(\"sessionTimer\") || 0; \nvar currTime = Date.now();\nflow.set(\"sessionTimer\", currTime);\nflow.set(\"clientid\", msg.socketid);\n\nmsg.ui_control = {\n    \"tabs\": {\n        \"activate\": \"Dashboard\" \n    }\n};\n\n/* ui-control payload */\nmsg.payload = { group: {\n    show : [\"Dashboard_SensorData\", \"Another_History\"],\n    hide : [\"Login_Login\"]\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 40,
+        "wires": [
+            [
+                "329103acdb344549"
+            ]
+        ]
+    },
+    {
+        "id": "716cecafe4391eaa",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "= 1 : Usuário Não Encontrado ou Senha Inválida",
+        "func": "msg.payload = \"Usuário ou senha inválidos.\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 80,
+        "wires": [
+            [
+                "9fe43421aa9876a5"
+            ]
+        ]
+    },
+    {
+        "id": "9fe43421aa9876a5",
+        "type": "ui_toast",
+        "z": "47d4a276af33aacb",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Falha de Autenticação",
+        "name": "Falha de Autenticação",
+        "x": 1330,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "329103acdb344549",
+        "type": "ui_ui_control",
+        "z": "47d4a276af33aacb",
+        "name": "Ir Para Sensores",
+        "x": 1120,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8f1d686db5b9672",
+        "type": "ui_template",
+        "z": "47d4a276af33aacb",
+        "group": "e64133cd1cd25b60",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\nbutton.md-icon-button {\ndisplay: none;\n}\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "4e35614ec2c9d0e8"
+            ]
+        ]
+    },
+    {
+        "id": "f17442e47094b19b",
+        "type": "comment",
+        "z": "47d4a276af33aacb",
+        "name": "Controle de Acessos",
+        "info": "",
+        "x": 130,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "adad7ce357180514",
+        "type": "inject",
+        "z": "47d4a276af33aacb",
+        "name": "Timer",
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 114,
+        "y": 280,
+        "wires": [
+            [
+                "8fa6bfb654fbd23f"
+            ]
+        ]
+    },
+    {
+        "id": "8fa6bfb654fbd23f",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Detect Session Timer",
+        "func": "var sessionTimer =  flow.get(\"sessionTimer\") || 0; \nvar currTime = Date.now();\nvar SESSION_TIMEOUT = 10000000; //15 secs 15000\n\nif ( sessionTimer === 0 /* Inactive, No user signed in */ ) {\n    msg.payload = 2;\n} else {\n    if ( currTime - sessionTimer > SESSION_TIMEOUT ) {\n      msg.payload = 0;  \n    } else {\n      msg.payload = 1;        \n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "f114c6a9d45ab5d8"
+            ]
+        ]
+    },
+    {
+        "id": "f114c6a9d45ab5d8",
+        "type": "switch",
+        "z": "47d4a276af33aacb",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 530,
+        "y": 260,
+        "wires": [
+            [
+                "a07084d5afa8bb9a"
+            ],
+            [
+                "c947e1e5e04b24cd"
+            ],
+            [
+                "3785a95bd381e1d8"
+            ]
+        ]
+    },
+    {
+        "id": "a07084d5afa8bb9a",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Time-Out",
+        "func": "/* activate session timer */\nvar sessionTimer =  flow.get(\"sessionTimer\") || 0; \nflow.set(\"sessionTimer\", 0);\n\nmsg.socketid = flow.get(\"clientid\") || undefined;\nmsg.payload = \"Session Expired! Please singin again!\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 691.9999847412109,
+        "y": 305.0000114440918,
+        "wires": [
+            [
+                "f3fa5d9ea89f9e12"
+            ]
+        ]
+    },
+    {
+        "id": "bed59c36eb43b869",
+        "type": "ui_ui_control",
+        "z": "47d4a276af33aacb",
+        "name": "Go to Signin Group",
+        "x": 1086.5000324249268,
+        "y": 306.99999618530273,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3fa5d9ea89f9e12",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Sign-In Redirection",
+        "func": "var msg = {};\n\nmsg.payload = { group: {\n    hide : [\"Dashboard_SensorData\", \n            \"Dashboard_History\"],\n    show : [\"Login_Login\"]\n}\n};\n\nflow.set(\"clientid\", undefined);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890.0000228881836,
+        "y": 308.00000762939453,
+        "wires": [
+            [
+                "bed59c36eb43b869"
+            ]
+        ]
+    },
+    {
+        "id": "f1e70c47d9c1a690",
+        "type": "ui_ui_control",
+        "z": "47d4a276af33aacb",
+        "name": "Stay in Sensor Group",
+        "x": 1036.500099182129,
+        "y": 346.0000057220459,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c947e1e5e04b24cd",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Sensor/History Goup",
+        "func": "var msg = {};\nmsg.socketid = flow.get(\"clientid\") || undefined;\nmsg.payload = { group: {\n    show : [\"Dashboard_SensorData\", \"Dashboard_History\"],\n    hide : [\"Login_Login\"]\n}\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 733.5000305175781,
+        "y": 346.00000381469727,
+        "wires": [
+            [
+                "f1e70c47d9c1a690"
+            ]
+        ]
+    },
+    {
+        "id": "3785a95bd381e1d8",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Signin Goup",
+        "func": "var msg = {};\nmsg.payload = { group: {\n    hide : [\"Dashboard_SensorData\", \"Dashboard_History\"],\n    show : [\"Login_Login\"]\n}\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 704.5000915527344,
+        "y": 387.0000419616699,
+        "wires": [
+            [
+                "9236cc92daae52f2"
+            ]
+        ]
+    },
+    {
+        "id": "9236cc92daae52f2",
+        "type": "ui_ui_control",
+        "z": "47d4a276af33aacb",
+        "name": "Go to Signin Group",
+        "x": 1024.5002479553223,
+        "y": 384.0000419616699,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "931c058c7cee656a",
+        "type": "ui_chart",
+        "z": "47d4a276af33aacb",
+        "name": "Bar Chart : Temperatura e Umidade",
+        "group": "986cace72ea4fab3",
+        "order": 1,
+        "width": "6",
+        "height": "9",
+        "label": "Temperatura e Umidade",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "%H:%M",
+        "interpolate": "linear",
+        "nodata": "No Data Yet",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "80",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 680,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae5d303a40a3d3d6",
+        "type": "ui_chart",
+        "z": "47d4a276af33aacb",
+        "name": "Pie Chart : Temperatura e Umidade",
+        "group": "2810d95ef2593f7c",
+        "order": 1,
+        "width": "6",
+        "height": "9",
+        "label": "Temperatura e Umidade",
+        "chartType": "pie",
+        "legend": "true",
+        "xformat": "%H:%M",
+        "interpolate": "linear",
+        "nodata": "No Data Yet",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "80",
+        "removeOlder": "12",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#30b31e",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 680,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a5601068bd9888cd",
+        "type": "ui_gauge",
+        "z": "47d4a276af33aacb",
+        "name": "Donut : Umidade",
+        "group": "44373cf58607cd77",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Umidade",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 100,
+        "colors": [
+            "#1a25ab",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "6e26d2c0dd96f999",
+        "type": "ui_gauge",
+        "z": "47d4a276af33aacb",
+        "name": "Compass : Temperatura",
+        "group": "44373cf58607cd77",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "compass",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 50,
+        "colors": [
+            "#66ccff",
+            "#ff8000",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "9ca17503bf6cb6e9",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Inserir Novo Usuário",
+        "func": "if (msg.payload.length > 0) {\n    msg.payload = 2; // Usuário já existe\n    return [msg, null];\n} else {\n    var username = msg.username;\n    var password = msg.password;\n    msg.topic = `INSERT INTO USUARIOS (usuario, senha) VALUES ('${username}', '${password}')`;\n    return [null, msg];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 718,
+        "y": 920,
+        "wires": [
+            [
+                "e0b5597087fe5220"
+            ],
+            [
+                "3402a8d60de2e9df"
+            ]
+        ]
+    },
+    {
+        "id": "3402a8d60de2e9df",
+        "type": "mysql",
+        "z": "47d4a276af33aacb",
+        "mydb": "da6614083e26cb12",
+        "name": "",
+        "x": 898,
+        "y": 920,
+        "wires": [
+            [
+                "3eef68becc8dd0a9"
+            ]
+        ]
+    },
+    {
+        "id": "3eef68becc8dd0a9",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Confirmar Registro",
+        "func": "msg.payload = \"Usuário registrado com sucesso!\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1068,
+        "y": 920,
+        "wires": [
+            [
+                "b547f2f1a01e0e91"
+            ]
+        ]
+    },
+    {
+        "id": "b547f2f1a01e0e91",
+        "type": "ui_toast",
+        "z": "47d4a276af33aacb",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Registro de Usuário",
+        "name": "Registro de Usuário",
+        "x": 1280,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2051ce0e89821c6c",
+        "type": "comment",
+        "z": "47d4a276af33aacb",
+        "name": "Registrations",
+        "info": "",
+        "x": 130,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "81b09d251327a828",
+        "type": "ui_form",
+        "z": "47d4a276af33aacb",
+        "name": "Register Users",
+        "label": "",
+        "group": "5704aeeb48fcdffe",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Usuário",
+                "value": "username",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Senha",
+                "value": "password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Confirmar Senha",
+                "value": "confirm_password",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "username": "",
+            "password": "",
+            "confirm_password": ""
+        },
+        "payload": "",
+        "submit": "Registrar",
+        "cancel": "Cancelar",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 138,
+        "y": 920,
+        "wires": [
+            [
+                "17e45a0c69631691"
+            ]
+        ]
+    },
+    {
+        "id": "8d1c6c8a25e96b90",
+        "type": "ui_form",
+        "z": "47d4a276af33aacb",
+        "name": "Register Sensors",
+        "label": "",
+        "group": "5ad0530768dac6d8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Servidor",
+                "value": "server",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Protocolo",
+                "value": "protocol",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Porta",
+                "value": "port",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Tópico",
+                "value": "topic",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Latitude",
+                "value": "latitude",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Longitude",
+                "value": "longitude",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "server": "",
+            "protocol": "",
+            "port": "",
+            "topic": "",
+            "latitude": "",
+            "longitude": ""
+        },
+        "payload": "",
+        "submit": "Registrar",
+        "cancel": "Cancelar",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 150,
+        "y": 860,
+        "wires": [
+            [
+                "1d04a3cdfe95bffc"
+            ]
+        ]
+    },
+    {
+        "id": "1d04a3cdfe95bffc",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Validar Registro",
+        "func": "var server = msg.payload.server;\nvar protocol = msg.payload.protocol;\nvar port = msg.payload.port;\nvar topico = msg.payload.topic;\nvar latitude = msg.payload.latitude;\nvar longitude = msg.payload.longitude;\n\nmsg.topic = `INSERT INTO SENSORES (SERVIDOR, PROTOCOLO, PORTA, TOPICO, LATITUDE, LONGITUDE) VALUES ('${server}','${protocol}','${port}','${topico}', '${latitude}', '${longitude}')`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 860,
+        "wires": [
+            [
+                "3560ae2d6c89e752"
+            ]
+        ]
+    },
+    {
+        "id": "3560ae2d6c89e752",
+        "type": "mysql",
+        "z": "47d4a276af33aacb",
+        "mydb": "da6614083e26cb12",
+        "name": "",
+        "x": 530,
+        "y": 860,
+        "wires": [
+            [
+                "24a858e0f8db679c"
+            ]
+        ]
+    },
+    {
+        "id": "24a858e0f8db679c",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Confirmar Registro",
+        "func": "msg.payload = \"Sensor registrado com sucesso!\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 860,
+        "wires": [
+            [
+                "368e34ac04b3650a"
+            ]
+        ]
+    },
+    {
+        "id": "368e34ac04b3650a",
+        "type": "ui_toast",
+        "z": "47d4a276af33aacb",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Registro de Sensor",
+        "name": "Registro de Sensor",
+        "x": 930,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1089176e3987efae",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Erro de Senha",
+        "func": "msg.payload = \"As senhas não coincidem.\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 368,
+        "y": 984,
+        "wires": [
+            [
+                "36c3643f09ef699f"
+            ]
+        ]
+    },
+    {
+        "id": "36c3643f09ef699f",
+        "type": "ui_toast",
+        "z": "47d4a276af33aacb",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Erro de Registro",
+        "name": "Erro de Registro",
+        "x": 608,
+        "y": 984,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0b5597087fe5220",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Erro de Usuário",
+        "func": "msg.payload = \"Usuário já existe.\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 368,
+        "y": 1084,
+        "wires": [
+            [
+                "36c3643f09ef699f"
+            ]
+        ]
+    },
+    {
+        "id": "17e45a0c69631691",
+        "type": "function",
+        "z": "47d4a276af33aacb",
+        "name": "Validar Registro",
+        "func": "var username = msg.payload.username;\nvar password = msg.payload.password;\nvar confirm_password = msg.payload.confirm_password;\n\nif (password !== confirm_password) {\n    msg.payload = 1; // Senhas não coincidem\n    return [msg, null];\n} else {\n    msg.topic = `SELECT * FROM USUARIOS WHERE usuario = '${username}'`;\n    return msg;\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 920,
+        "wires": [
+            [
+                "1089176e3987efae"
+            ],
+            [
+                "211daf086546ebe9"
+            ]
+        ]
+    },
+    {
+        "id": "211daf086546ebe9",
+        "type": "mysql",
+        "z": "47d4a276af33aacb",
+        "mydb": "da6614083e26cb12",
+        "name": "",
+        "x": 538,
+        "y": 920,
+        "wires": [
+            [
+                "9ca17503bf6cb6e9"
+            ]
+        ]
+    }
+]
